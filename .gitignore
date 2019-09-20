@@ -1,0 +1,14 @@
+# Emacs stuff
+*\#
+.\#*
+*~
+
+# Save States
+*sta
+*STA
+
+# lldb
+*dSYM
+
+build
+bin
