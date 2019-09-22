@@ -12,7 +12,7 @@ int getIntFromUser(const char *request, const int maxValue) {
     fgets(line, sizeof line, stdin);
     line[strcspn(line, "\n")] = 0;
     output = strtol(line, &pEnd, 10);
-    if (output > 0 && output <= maxValue && pEnd == 0) {
+    if (output > 0 && output <= maxValue && *pEnd == 0) {
       break;
     } else if (line[0] == 'n' || strlen(line) == 0) {
       return -1;
